@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "96531075419",
+    "project_id": "censo2021-cddc1",
+    "storage_bucket": "censo2021-cddc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96531075419:android:f967a9a267bbd59fd34a7e",
+        "android_client_info": {
+          "package_name": "edu.labneo.censo2021"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96531075419-3e782m4hfb37trc6h2ol7f0te0v0vcsl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJedjwXWvXmTDGOFdMR6UqpRfW9gGFdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96531075419-3e782m4hfb37trc6h2ol7f0te0v0vcsl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

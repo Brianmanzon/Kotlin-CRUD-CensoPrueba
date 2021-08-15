@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Censo2021</string>
+    <string name="tab1">Ingresar</string>
+    <string name="tab2">Editar</string>
+    <string name="tab3">Consultas</string>
+    <string name="dni">Número de documento</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="f_nac">Fecha de nacimiento</string>
+    <string name="direccion">Dirección</string>
+    <string name="telefono">Teléfono</string>
+    <string name="ocupacion">Ocupación</string>
+    <string name="ingreso">Ingreso mensual</string>
+    <string name="obligatorio">Obligatorio*</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="borrar">Borrar</string>
+    <string name="editar">Editar</string>
+
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/c_b_desocupados"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:text="Desocupados" />
+
+
+
+        <Button
+            android:id="@+id/c_b_pobres"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="pobres" />
+
+        <Button
+            android:id="@+id/i_b_borrar"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="138dp"
+            android:layout_height="wrap_content"
+            android:text="% genero" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_hombres"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hombres">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/c_t_hombres"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="2dp"
+                android:focusableInTouchMode="false"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_mujeres"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mujeres">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/c_t_mujeres"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="2dp"
+                android:focusableInTouchMode="false"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_otros"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Otros">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/c_t_otros"
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="2dp"
+                android:focusableInTouchMode="false"
+                android:textSize="12sp"
+                android:inputType="textNoSuggestions"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/c_rv_consultas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

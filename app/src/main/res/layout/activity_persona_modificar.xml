@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            app:helperTextEnabled="true"
+            app:helperText="@string/obligatorio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_nombre"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/apellido"
+            app:helperTextEnabled="true"
+            app:helperText="@string/obligatorio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_apellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_face_24"
+                android:drawablePadding="10dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+        <Spinner
+            android:id="@+id/m_s_doc"
+            android:layout_width="108dp"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/spinner_background"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dni"
+            app:helperTextEnabled="true"
+            app:helperText="@string/obligatorio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_doc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_info_20"
+                android:drawablePadding="10dp"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <Spinner
+            android:id="@+id/m_s_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_weight="0"
+            android:background="@drawable/spinner_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/f_nac"
+            app:helperTextEnabled="true"
+            app:helperText="@string/obligatorio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_nac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_edit_calendar_20"
+                android:drawablePadding="10dp"
+                android:inputType="date"
+                android:focusableInTouchMode="false"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/direccion"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_direccion"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_room_24"
+                android:drawablePadding="10dp"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField6"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefono"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_settings_phone_24"
+                android:drawablePadding="10dp"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField7"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/ocupacion"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:helperText="Vacío para desempleado*">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_ocupacion"
+                android:layout_width="187dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_work_24"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/outlinedTextField8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/ingreso"
+            app:helperTextEnabled="true"
+            app:helperText="@string/obligatorio"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/m_t_ingreso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/baseline_paid_20"
+                android:drawablePadding="10dp"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/m_b_modificar"
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:text="modificar"
+            style="?attr/borderlessButtonStyle"
+            />
+
+        <Button
+            android:id="@+id/m_b_borrar"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="207dp"
+            android:layout_height="wrap_content"
+            android:text="borrar persona" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
